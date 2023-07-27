@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEBSITE FOR BUYING BIRD</title>
+</head>
+<style>
+    /* CSS Styles */
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1f1f1f;
+      color: #e6dede;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    /* Main Content Styles */
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: calc(100vh - 80px);
+    }
+    
+    h2 {
+      margin-bottom: 10px;
+      color: #e6dede;
+    }
+    
+    .home-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  
+    /* Header Styles */
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    /* Navigation Styles */
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    nav ul li {
+      margin-right: 10px;
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      color: #e6dede;
+      padding: 5px 10px;
+      border: 1px solid #e6dede;
+      border-radius: 5px;
+    }
+  
+    nav ul li a:hover {
+      background-color: #e6dede;
+      color: #0b0707;
+    }
+  
+    /* Main Content Styles */
+    section {
+      margin-bottom: 30px;
+    }
+  
+    h2 {
+      margin-bottom: 10px;
+      color: #e6dede;
+    }
+  
+    .dropdown {
+      position: relative;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0b0707;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    .dropdown-content a {
+      color: #e6dede;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    /* Footer Styles */
+    footer {
+      text-align: left;
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid #e6dede;
+      color: #e6dede;
+    }
+  
+    /* Image Styles */
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .image-description {
+      text-align: center;
+    }
+  </style>
+<body>
+  <header>
+    <h1>Website Jual Beli Burung</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn">Jenis</a>
+        <div class="dropdown-content">
+          <a href="murai_medan.html">Murai medan </a>
+          <a href="murai_borneo.html">Murai borneo </a>
+          <a href="murai_nias.html">Murai nias</a>
+        </div>
+      </li>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+  <main>
+    <section>
+      <div class="image-container">
+        <img src="img/Murai-Batu-Aceh nias.jpg" alt="Murai Batu Nias" class="home-image">
+      </div>
+      <div class="image-description">
+        <h2>Murai Batu Nias</h2>
+        <p>Ciri yang utama adalah pada bagian ekornya yang hitam semua. Punya ekor cukup panjang kisaran 20 centi – 25 centian. Volume suara sangat keras, memiliki kemampuan adaptasi sangat tinggi, sehingga burung ini lebih cepat jinak dan tidak mudah stress meskipun berulang kali pindah tangan atau pindah tempat. Namun karena warna bulunya hanya Hitam, banyak pecinta burung yang kurang suka, padahal kicauan murai nias tidak kalah dengan murai medan maupun murai aceh, bahkan Murai Nias memiliki kemampuan merekam suara lebih cepat dibandingkan burung murai lainnya.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Website Jual Beli Burung. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

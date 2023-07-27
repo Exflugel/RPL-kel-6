@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEBSITE FOR BUYING BIRD</title>
+  <style>
+  /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: #e6dede;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #e6dede;
+  margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e6dede;
+  padding: 5px 10px;
+  border: 1px solid #e6dede;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #e6dede;
+  color: #0b0707;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0b0707;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #e6dede;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ... CSS sebelumnya ... */
+
+/* ... CSS sebelumnya ... */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #e6dede;
+  border-radius: 5px;
+  background-color: #0b0707;
+  color: #e6dede;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  flex: 1;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #e6dede;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  color: #e6dede;
+  margin-bottom: 10px;
+}
+
+/* ... CSS lainnya ... */
+
+
+/* ... CSS lainnya ... */
+
+
+.btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #e6dede;
+  color: #e6dede;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Website Jual Beli Burung</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn">Jenis</a>
+        <div class="dropdown-content">
+          <a href="murai_medan.html">Murai medan </a>
+          <a href="murai_borneo.html">Murai borneo </a>
+          <a href="murai_nias.html">Murai nias</a>
+        </div>
+      </li>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+  <main>
+    <!-- Menu -->
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/murai-borneo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Murai Batu Borneo</h5>
+              <p>Burung sehat aktif, no minus, PE 16, mata belo, kaki wulung
+                gacor siap untuk ternak / lomba.
+                
+              </p>
+             <label class="card-text harga">Rp.1.500.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/burung-murai-medan3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Murai Batu Medan</h5>
+              <p>Burung sehat aktif, no minus, PE 28, mata belo, kaki wulung
+                gacor siap untuk ternak / lomba.
+
+              </p>
+             <label class="card-text">Rp. 10.000.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/murai-batu-nias.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Murai Batu Nias</h5>
+              <p>Burung sehat aktif, no minus, PE 20, mata belo, kaki wulung, ekor full hitam
+                gacor siap untuk ternak / lomba.
+
+              </p>
+              <label class="card-text">Rp. 5.000.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+       </div>  
+
+       <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/betina medan.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Betina Medan Super</h5>
+              <p>Burung sehat aktif, no minus, mata kuku fisik aman semua, siap ternak
+                PE 15 super
+
+              </p>
+              <label class="card-text">Rp. 2.000.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/betina nias.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Betina Nias Super</h5>
+              <p>Burung sehat aktif, no minus, mata kuku fisik aman semua, siap ternak
+                Nias super PE 13
+
+              </p>
+              <label class="card-text">Rp. 2.000.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/betina blorok.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Betina Blorok Ori</h5>
+              <p>Burung sehat aktif, no minus, blorok asli siap cetak warna
+                PE 12 
+
+              </p>
+              <label class="card-text">Rp. 6.000.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/trotol medan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Trotol Medan</h5>
+              <p>Burung aktif sehat fighter, jamin jantan, calon mewah, no minus, umur 3 bulan
+
+              </p>
+              <label class="card-text">Rp. 1.300.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>
+       </div>  
+
+       <div class="row mt-3 mb-5">
+        <div class="col-md-3">
+          <div class="card border-dark">
+            <img src="img/trotol nias.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Trotol Nias</h5>
+              <p>Burung aktif sehat fighter, jamin jantan, calon buat indukan mewah, no minus, umur 2,5 bulan
+                
+              </p>
+              <label class="card-text">Rp. 1.100.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-md-3">
+          <div class="card border-dark ">
+            <img src="img/trotol borneo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Trotol Borneo</h5>
+              <p>Burung aktif sehat fighter, jamin jantan, calon buat cetak seri F gaya macul, no minus, umur 2 bulan
+
+              </p>
+              <label class="card-text">Rp. 1.000.000</label><br>
+              <a href="#" class="btn btn-primary btn-sm">BUY</a>
+              <a href="#" class="btn btn-danger btn-sm">CHAT</a>
+            </div>
+          </div>
+        </div>        
+
+      
+<!-- Akhir Menu -->
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Website Jual Beli Burung. All rights reserved.</p>
+  </footer>
+</body>
+</html>
